@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" class="page-home">
+<head>
+  <meta charset="utf-8" />
+  <title>Jobayan</title>
+
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, height=device-height, width=device-width" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="robots" content="index,follow" />
+  <link rel="icon" href="http://jobayan.com/favicon.ico" type="image/x-icon" />
+
+  <meta property="fb:app_id" content="" />
+  <meta property="fb:admins" content="" />
+  <meta property="og:title" content="Jobayan" />
+  <meta property="og:url" content="http://www.jobayan.com/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" contentques="Jobayan" />
+  <meta name="twitter:url" content="http://www.jobayan.com/" />
+
+  <meta itemprop="name" content="" />
+  <meta itemprop="openingHours" content="Mo,Tu,We,Th,Fr 10:00-20:00" />
+  <link itemprop="url" content="" />
+  <link itemprop="logo" content="http://jobayan.com/favicon.png" />
+  <link itemprop="image" content="http://jobayan.com/images/logo.png" />
+  <link rel="shortcut icon" href="http://jobayan.com/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" href="http://jobayan.com/favicon.png" />
+  <link rel="icon" type="image/gif" href="http://jobayan.com/favicon.gif" />
+  <link rel="icon" type="image/x-icon" href="http://jobayan.com/favicon.ico" />
+  <link href="http://jobayan.com/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="http://jobayan.com/components/open-sans-fontface/open-sans.css" rel="stylesheet" type="text/css" />
+  <link href="http://jobayan.com/styles/fa.css" rel="stylesheet" type="text/css" />
+  <link href="http://jobayan.com/styles/www.css" rel="stylesheet" type="text/css" />
+  <script src="http://jobayan.com/components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="http://jobayan.com/components/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="http://jobayan.com/components/yarn-acquire/acquire.js" type="text/javascript"></script>
+  <script src="http://jobayan.com/scripts/www.js" type="text/javascript"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+  <div class="alert alert-info m-0 px-4 py- border-0">
+    <i class="fal fa-info-circle"></i>
+    <strong>2021 Update:</strong>
+    Jobayan now has a better way of matching companies and candidates. Old accounts will need to signup again.
+  </div>
+  <header class="head">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/">
+        <img src="http://jobayan.com/images/logo/logo-white-orange.png" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main-menu">
+        <ul class="navbar-nav mr-auto navbar-left">
+          <li class="nav-item active">
+            <a class="nav-link text-uppercase" href="/">Candidates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="https://employer.jobayan.com">
+              Employers
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav justify-content-between navbar-right">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="javascript:void(0)">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="http://jobayan.com/auth/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase" href="http://jobayan.com/auth/signup">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="body">
+    <style>
+  /* Page - Home - Section 1
+  ------------------------------*/
+
+  html, body {
+    font-family: 'Open Sans', Arial, sans-serif !important;
+  }
+
+  .page-home .section-1 {
+    background-image: url('http://jobayan.com/images/banner/banner-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+  }
+  .page-home .section-1 .carousel {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .page-home .section-1 img {
+    object-fit: cover;
+  }
+
+  .page-home .section-1 h1 {
+    color: #474747;
+    margin: 0.2em auto;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+  .page-home .section-1 .box {
+    background-color: rgba(255, 255, 255, 0.90);
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.12);
+    margin: 200px auto;
+    max-width: 1000px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .page-home .section-1 .job-search-form .input-group .form-group .control-label {
+    color: #707070;
+    font-size: 12px;
+    left: -16px;
+    top: -12px;
+  }
+
+  .page-home .section-1 .job-search-form .input-group .form-group .form-control {
+    font-size: 14px;
+    height: 64px;
+    padding: 12px 35px 12px 0;
+  }
+
+  .page-home .section-1 .job-search-form .input-group .field-location .trigger-location {
+    top: 14px;
+  }
+
+  .page-home .section-1 .job-search-form .input-group .btn {
+    font-size: 16px;
+    padding: 15px 50px;
+  }
+
+  @media(max-width: 1200px) {
+    .page-home .section-1 .box {
+      margin: 150px auto;
+    }
+  }
+
+  @media(max-width: 992px) {
+    .page-home .section-1 .box {
+      margin: 100px auto;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .page-home .section-1 .carousel {
+      display: none;
+      margin: 50px auto;
+    }
+  }
+
+  @media(max-width: 600px) {
+    .page-home .section-1 .box {
+      margin: 0;
+    }
+  }
+
+  @media(max-width: 410px) {
+    .page-home .section-1 .container {
+      padding: 0;
+    }
+
+    .page-home .section-1 .box > h1,
+    .page-home .section-1 .box > a {
+      display: none !important;
+    }
+  }
+
+/* Page - Home - Section 2
+------------------------------*/
+
+.page-home .section-2 {
+  background-color: #F4F4F4;
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.page-home .section-2 h3,
+.page-home .section-2 h4 {
+  font-weight: 700;
+}
+
+.page-home .section-2 .top-searches-image {
+  margin: 30px 0;
+}
+.page-home .section-2 .top-searches-image img {
+  height: 100px;
+  margin: auto;
+}
+
+.page-home .section-2 ul {
+  padding: 0;
+}
+
+.page-home .section-2 ul li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.page-home .section-2 ul li a {
+  color: #03B6D5;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.page-home .section-2 a.top-searches {
+  outline: 0;
+  text-decoration: none;
+}
+
+.page-home .section-2 a.top-searches:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+.page-home .section-2 a.top-searches span {
+  border-radius: 25px;
+  border: 2px solid;
+  color: #03B6D5;
+  font-size: 24px;
+  width: 28px;
+}
+
+.page-home .section-2 a.top-searches h3 {
+  color: #03B6D5;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Page - Home - Section 3
+------------------------------*/
+
+.page-home .section-3 {
+
+}
+
+/* Page - Home - Section 4
+------------------------------*/
+
+.page-home .section-4 {
+  padding: 60px 0;
+}
+
+.page-home .section-4 .article {
+  background: #F0F0F0;
+}
+
+.page-home .section-4 .article .image {
+  height: 175px;
+  overflow: hidden;
+}
+
+.page-home .section-4 .article .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page-home .section-4 .article .content {
+  height: 300px;
+  margin: 27px
+}
+
+.page-home .section-4 .article .content h5 {
+  font-size: 20px;
+  height: 68px;
+}
+
+.page-home .section-4 .article .content .read-more {
+  background: #03B6D5;
+  border-radius: 6px;
+  border: 1px solid #03B6D5;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.page-home .section-4 .article .content .read-more a {
+  color: #F0F0F0;
+  font-weight: 500;
+}
+
+.page-home .section-4 .article .content .detail,
+.page-home .section-4 .article .content h5 a {
+  color: #474747;
+  height: 150px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page-home .section-4 h1 {
+  margin: 0 0 1em;
+}
+
+/* Page - Home - Section 5
+------------------------------*/
+
+.page-home .section-5 {
+  background-color: #03B6D5;
+  padding: 60px 0;
+}
+
+.page-home .section-5 label {
+  font-weight:600;
+}
+
+.page-home .section-5 input {
+  margin: 0.5em 0 1em;
+  height: 45px;
+}
+
+.page-home .section-5 .md-form textarea{
+  width:100%;
+  min-height: 10em;
+  margin:0 auto 2em;
+}
+
+.page-home .section-5 .btn-primary {
+  padding: 1em 2.5em;
+}
+
+</style>
+<section class="section section-1">
+  <div class="container">
+    <div class="carousel lazy-load slide h-100" data-ride="carousel">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img class="d-block w-100 h-100" src="https://live.jobayan.com/images/adsense/SPPE.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SPLI.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SOPC.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SLM.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SLFC.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SLBT.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SLAC.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SGMP.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SGLC.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SGCC.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/MI.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/MART1.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/GB.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/ESSI.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/DM.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/CBPL.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SMART.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/POWER.jpg" />
+        </div>
+        <div class="carousel-item h-100">
+          <img class="d-block w-100 h-100" data-src="https://live.jobayan.com/images/adsense/SRMC.jpg" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="col-md-12 text-center">
+        <h1>Your Career Awaits!</h1>
+      </div>
+      <a class="float-right d-inline-block mt-2" href="https://employer.jobayan.com">
+        I want to hire
+      </a>
+      <form autocomplete="off" id="home-location" class="job-search-form" action="/job/location/search" data-do-disabled="gcloud-location-search-form" data-token="">
+        <div class="input-group">
+          <span class="input-group-text input-group-icon">
+            <i class="fas fa-coffee"></i>
+          </span>
+          <div class="form-group field-location">
+            <label class="control-label">Enter Job Position</label>
+            <input class="form-control field-position-label" type="text" name="q" placeholder="eg. Project Manager" />
+            <input class="field-position-value" type="hidden" />
+            <div class="input-suggestion d-none" data-do="suggestion-field" data-format="{{position_title}}" data-target-label="#home-location input.field-position-label" data-target-value="#home-location input.field-position-value" data-url="https://static.jobayan.com/rest/position?q={QUERY}&columns=position_id,position_title&range=50" data-value="position_id"></div>
+          </div>
+          <span class="input-group-text input-group-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <div class="form-group field-location">
+            <label class="control-label">Enter City or Province</label>
+            <input class="form-control field-location-label" type="text" name="job_location" placeholder="eg. Metropolitan Manila" />
+            <a class="trigger-location text-pink" href="javascript:void(0)" data-do="geoph-locator" data-on="click" data-target-label="input.field-location-label" data-target-value="input.field-location-value">
+              <i class="fas fa-crosshairs"></i>
+            </a>
+            <input class="field-location-value" type="hidden" name="geoph_location_id" />
+            <div class="input-suggestion d-none" data-do="suggestion-field" data-format="{{geoph_location_label}}" data-target-label="#home-location input.field-location-label" data-target-value="#home-location input.field-location-value" data-url="//geoph.openovate.com/geoph/location/search?q={QUERY}&span[geoph_location_level][1]=3&range=25" data-value="geoph_location_id"></div>
+          </div>
+          <button class="btn btn-primary input-append">Find Jobs</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      $(function() {
+        $('.carousel.lazy-load').bind('slide.bs.carousel', function (e) {
+    //dont load images on mobile
+    if ($(window).width() <= 767) {
+      return;
+    }
+
+    var image = $(e.relatedTarget).find('img[data-src]');
+    image.attr('src', image.data('src'));
+    image.removeAttr('data-src');
+  });
+      });
+    </script>
+  </div>
+</section>
+
+
+<section class="section section-3">
+  <style>
+  .how-it-works {
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    padding: 60px 0;
+  }
+
+  .how-it-works h2 {
+    color: #F99462;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 2em;
+  }
+
+  .how-it-works .quick-post {
+    padding-left: 50px;
+  }
+
+  .how-it-works h3 {
+    color: #03B6D5;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 14px;
+    position: relative;
+  }
+
+  .how-it-works h3:before {
+    background: #F99462;
+    border-radius: 50px;
+    color: #FFFFFF;
+    content: attr(data-step);
+    display: inline-block;
+    height: 25px;
+    left: -40px;
+    line-height: 25px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 25px;
+  }
+
+  .how-it-works p {
+    line-height: 30px;
+    margin: 10px 0;
+  }
+
+  .how-it-works .interested {
+    color: #F99462;
+  }
+</style>
+<div class="how-it-works">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>How does Jobayan work?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="quick-post">
+              <h3 data-step="1">Publish your resume</h3>
+              <p>
+                Add your experience, education and skills. Jobayan will automatically match you with jobs.
+              </p>
+              <h3 data-step="2">Search Through Job Openings</h3>
+              <p>
+                Click &quot;Apply Now&quot; on a job opening and your contact details will automatically get sent to them.
+              </p>
+              <h3 data-step="3">Wait for a Match</h3>
+              <p>
+                Here in Jobayan, theres no forever in job hunting!
+                When a job opening matches, you will be notified right away!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 justify-content-center" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-block btn-primary" href="/auth/signup">Get Started Now!</a>
+          </div>
+        </div>
+      </div><!--col-md-8-->
+    
+      <div class="col-md-4 justify-content-center">
+          <img src="./img/howdoes01.jpg" style="max-height:445px;margin:0 auto;">
+      </div>
+    </div>
+  </div><!--container-->
+</div>
+</section>
+
+
+<!-- Section 2-->
+<section class="section section-2">
+  <style>
+
+
+  .section-2 .resumeDesc {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  </style>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" style="margin-bottom: 40px;">
+        <h1>Create and Download your FREE Resume!</h1>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 3em;">
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc01.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Build your Resume for FREE!</h4>
+          <p>Jobayan is FREE forever!</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc02.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Highlight Your Experience</h4>
+          <p>Put your best foot forward.</p>
+
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc03.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Save and Publish Easily</h4>
+          <p>Get your PDF resume and start applying for jobs.</p>
+        </div>
+
+      </div>
+        <div class="row">
+          <div class="col-md-12 justify-content-center" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-block btn-primary" href="/auth/signup">Get Started Now!</a>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+<!-- Articles -->
+<section class="section section-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Read up on current job-hunting trends</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="article clearfix">
+          <div class="image">
+            <a href="/Article/Does-Leaving-The-Company-On-Holiday-Season-A-Good-Idea" title="latest blog post">
+              <img alt="latest blog Image" src="https://s3-ap-southeast-1.amazonaws.com/live.jobayan.com/upload/Andrea-u69622bd1b076801953a7b968b1c35e5f9c5db1.jpg" />
+            </a>
+          </div>
+          <div class="content">
+            <h5>
+              <a href="/Article/Does-Leaving-The-Company-On-Holiday-Season-A-Good-Idea" title="latest blog">
+                <strong>
+                  Does Leaving the Company on Holiday Season a Good Idea?
+                </strong>
+              </a>
+            </h5>
+            <div class="detail">
+              <br />
+            </div>
+            <div class="read-more">
+              <a class="btn" href="/Article/Does-Leaving-The-Company-On-Holiday-Season-A-Good-Idea" target="_blank">
+                Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="article clearfix">
+          <div class="image">
+            <a href="/Article/Benefits-Of-Looking-For-A-Job-In-December" title="latest blog post">
+              <img alt="latest blog Image" src="https://s3-ap-southeast-1.amazonaws.com/live.jobayan.com/upload/Bianca-u696262f3c4981541f0721582e34d334b74d1b1.jpg" />
+            </a>
+          </div>
+          <div class="content">
+            <h5>
+              <a href="/Article/Benefits-Of-Looking-For-A-Job-In-December" title="latest blog">
+                <strong>
+                  Benefits of Looking for a Job in December
+                </strong>
+              </a>
+            </h5>
+            <div class="detail">
+              <br />
+              This holiday season, people are busy with all their personal agendas like Christmas gift shopping, Christmas parties, leisure travel, etc.
+            </div>
+            <div class="read-more">
+              <a class="btn" href="/Article/Benefits-Of-Looking-For-A-Job-In-December" target="_blank">
+                Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="article clearfix">
+          <div class="image">
+            <a href="/Article/Reasons-Why-Workaholics-Need-To-Take-This-Holiday-Break" title="latest blog post">
+              <img alt="latest blog Image" src="https://s3-ap-southeast-1.amazonaws.com/live.jobayan.com/upload/Andrea-u69622e3a565be2a92688e72f3074e08fc157b1.jpg" />
+            </a>
+          </div>
+          <div class="content">
+            <h5>
+              <a href="/Article/Reasons-Why-Workaholics-Need-To-Take-This-Holiday-Break" title="latest blog">
+                <strong>
+                  Reasons Why Workaholics Need to Take this Holiday Break
+                </strong>
+              </a>
+            </h5>
+            <div class="detail">
+              <br />
+              The holiday season is fast approaching! We all need a break from time to time. No matter how much you enjoy your job
+            </div>
+            <div class="read-more">
+              <a class="btn" href="/Article/Reasons-Why-Workaholics-Need-To-Take-This-Holiday-Break" target="_blank">
+                Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="article clearfix">
+          <div class="image">
+            <a href="/Article/Door-To-Door-Job-Application-Is-It-Still-A-Thing" title="latest blog post">
+              <img alt="latest blog Image" src="https://s3-ap-southeast-1.amazonaws.com/live.jobayan.com/upload/Andrea-u696222b5770ad56a3ceaf5bbef193efb5c06f1.png" />
+            </a>
+          </div>
+          <div class="content">
+            <h5>
+              <a href="/Article/Door-To-Door-Job-Application-Is-It-Still-A-Thing" title="latest blog">
+                <strong>
+                  Door-to-door Job Application: Is It Still A Thing?
+                </strong>
+              </a>
+            </h5>
+            <div class="detail">
+              <br />
+              Jobs are everywhere. Wherever you go, there are companies looking for people to hire. But the problem is, not everyone is suitable for the position available.
+            </div>
+            <div class="read-more">
+              <a class="btn" href="/Article/Door-To-Door-Job-Application-Is-It-Still-A-Thing" target="_blank">
+                Read Article
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--section 5-->
+
+<section class="section section-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-xl-7">
+                    <form id="contact-form" name="contact-form" action="./contactform/mail.php" method="POST" onsubmit="return validateForm()">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                        <label for="name" class="">Your name</label>
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                    <div class="md-form">
+                                      <label for="email" class="">Your email</label>
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form">
+                                  <label for="subject" class="">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                  <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="center-on-small-only">
+                        <a class="btn btn-primary" onclick="validateForm()">Send</a>
+                    </div> <div class="status" id="status"></div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 col-xl-3">
+                      <div class="info">
+                  <div>
+                    <p><b>Head Office</b></p>
+                    <p>3F Sterling Place Annex Makati<br>
+                    2302 Chino Roces Ave. Extension<br>
+                    1231 Metro Manila<br></p>
+                  </div>
+
+                  <div>
+                    <p><b>Email</b></p>
+                    <p>info@jobayan.com</p>
+                  </div>
+
+                </div>
+                </div>
+                <!--Grid column-->
+
+            
+
+      </div>
+
+  </div>
+</section>
+</section>
+
+
+
+<footer class="foot">
+
+  <div class="foot-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 info">
+
+          <a href="/" title="Jobayan">
+            <img alt="Jobayan Logo" src="http://jobayan.com/images/logo/logo-white-orange.png" width="150" />
+          </a>
+
+          <p class="slogan">A simple way to connect to <br /> companies and candidates.</p>
+        </div>
+        <div class="col-md-4 about">
+          <p>Around Jobayan</p>
+          <ul>
+            <li>
+              <a href="/About-Jobayan" title="About">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="/contact-us" title="Contact Us">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a href="/Articles" title="News and Articles">
+                News and Articles
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 about">
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <a href="/Terms-And-Conditions" title="Terms and Conditions">
+                Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a href="/Privacy-Policy" title="Privacy Policy">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="foot-bottom">
+    <div class="container">
+
+      <div class="copyright">
+        Copyright &copy; Sterling Openovate Corporation 2021
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+</body>
+</html>
