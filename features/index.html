@@ -30,8 +30,16 @@
   	font-family: 'Open Sans', Arial, sans-serif !important;
   }
 
+  .page-home .hero {
+	background-image: url('../img/features-banner.png') !important;
+  }
+
+  .page-home .hero .hero-head, .page-home .hero .hero-lead {
+
+  }
+
   .page-home .section-1 {
-  	background-image: url('https://jobayan.com/images/banner/banner-1.jpg');
+  	background-image: url('../img/features-banner.png');
   	background-size: cover;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -265,13 +273,13 @@
 						Candidates
 					</a>
 				</li>
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link text-uppercase" href="../employer/index.html">
 						Employers
 					</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link text-uppercase" href="../features/index.html">Features</a>
+				<li class="nav-item active">
+					<a class="nav-link text-uppercase" href="./features/index.html">Features</a>
 				</li>
 			</ul>
 			<ul class="navbar-nav justify-content-between navbar-right">
@@ -295,11 +303,13 @@
 <section class="body">
 	<div class="hero pt-5">
 		<div class="container">
-			<h1 class="hero-head">Find Talent Ready to Get Hired</h1>
+		  <div class="col-md-4" style="background:rgba(255,255,255,0.7);margin-top: 200px;padding: 20px;">
+			<h1 class="hero-head" style="padding: 0 !important;">We Make Hiring Easy</h1>
 			<p class="hero-lead">
-				Thousands of jobseekers are posting that they want to get hired. Get matched to active jobseekers that fit your job ad.
+				See why jobseekers and employers prefer Jobayan over other job-posting websites.
 			</p>
 			<a class="btn btn-primary" href="/auth/signup">Sign Up For FREE</a>
+		  </div>
 		</div>
 	</div>
 
@@ -313,34 +323,60 @@
     border-radius: 50%;
     overflow: hidden;
     background-color: white;
-    height:200px;
-    width:200px;
+    height:250px;
+    width:250px;
+  }
+
+  .section-2 .section-2-content {
+  	text-align:left !important;
   }
   </style>
   <div class="container">
     <div class="row">
-      <div class="col-md-12" style="margin-bottom: 40px;">
-        <h1>Jobayan is FREE Forever!</h1>
-        <h5>Jobayan's core features will always be free for employers and candidates.</h5>
+      <div class="col-md-12" style="margin-bottom: 60px;">
+        <h1>AI-Driven Job Matching</h1>
+        <h5>Jobayan is a tech-driven job-hunting website that matches you with the best candidates.</h5>
       </div>
     </div>
     <div class="row">
-    	<div class="col-md-6">
+    	<div class="col-md-4">
 		  <div class="resumeDesc">
-		  	<p>IMG - Unli Job Posts</p>
+		  	<p>IMG</p>
 		  </div>
-    		<h2>FREE UNLIMITED Job Posts</h2>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+		</div>
+		<div class="col-md-8 justify-content-left section-2-content">
+    	  <h2>FEATURE HEADER 1</h2>
+    		<p style="margin-top:1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. est laborum.</p>
     	</div>
-    	<div class="col-md-6">
+    </div>
+    <div class="row" style="height:40px;"></div>
+    <div class="row">
+		<div class="col-md-8 justify-content-left section-2-content">
+    	  <h2>FEATURE HEADER 2</h2>
+    		<p style="margin-top:1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. est laborum.</p>
+    	</div>
+    	<div class="col-md-4">
 		  <div class="resumeDesc">
-		  	<p>IMG - Unli Applicants</p>
+		  	<p>IMG</p>
 		  </div>
-    		<h2>FREE UNLIMITED Applicants</h2>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+		</div>
+    </div>
+    <div class="row" style="height:40px;"></div>
+    <div class="row">
+    	<div class="col-md-4">
+		  <div class="resumeDesc">
+		  	<p>IMG</p>
+		  </div>
+		</div>
+		<div class="col-md-8 justify-content-left section-2-content">
+    	  <h2>FEATURE HEADER 3</h2>
+    		<p style="margin-top:1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. est laborum.</p>
@@ -350,100 +386,8 @@ reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. es
 </section>
 
 
-	<div class="features-1 pt-5">
-		<div class="container">
-			<h3 class="features-1-head">We Connect you to Relevant Candidates for Every Job Ad.</h3>
-			<div class="row">
-				<div class="col-md-4 mb-4">
-					<div class="features-1-img">
-						<img src="https://jobayan.com/images/home/sec-2-1.svg" />
-					</div>
-					<p class="features-1-lead">Create Your Employer Account and Get Verified.</p>
-					<p class="features-1-desc">Together with our Sales team, we can setup and verify your Employer account in minutes, so you can get started fast.</p>
-				</div>
-				<div class="col-md-4 mb-4">
-					<div class="features-1-img">
-						<img src="https://jobayan.com/images/home/sec-2-2.svg" />
-					</div>
-					<p class="features-1-lead">Create Your job Ad. Get Matched to Applicants that fit your job vacancy.</p>
-					<p class="features-1-desc">Highlight your Company's job vacancy and location of work. Get notifications whenever a jobseeker matches your job.</p>
-				</div>
-				<div class="col-md-4">
-					<div class="features-1-img">
-						<img src="https://jobayan.com/images/home/sec-2-3.svg" />
-					</div>
-					<p class="features-1-lead">Search for jobseekers and Click Interested to Connect to your favorites.</p>
-					<p class="features-1-desc">Search through posts made by jobseekers, the only platform that showcases an active jobseeker listing. Connect with them in a single click.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="stats">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 mb-5">
-					<div class="stat-img">
-						<img src="https://jobayan.com/images/home/sec-4-visits.svg" />
-					</div>
-					<h2 class="stat-number">500,000</h2>
-					<div class="stat-desc">visits monthly</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-5">
-					<div class="stat-img">
-						<img src="https://jobayan.com/images/home/sec-4-signups.svg" />
-					</div>
-					<h2 class="stat-number">25,000</h2>
-					<div class="stat-desc">sign ups monthly</div>
-				</div>
-				<div class="col-lg-3 col-md-6 mb-5">
-					<div class="stat-img pl-5">
-						<img src="https://jobayan.com/images/home/sec-4-posts.svg" />
-					</div>
-					<h2 class="stat-number">20,000</h2>
-					<div class="stat-desc">created posts monthly</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="stat-img">
-						<img src="https://jobayan.com/images/home/sec-4-connections.svg" />
-					</div>
-					<h2 class="stat-number">30,000</h2>
-					<div class="stat-desc">connections made between jobseekers and companies monthly</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="features-2">
-		<div class="container">
-			<div class="features-2-item mb-5">
-				<div class="features-2-img">
-					<img src="https://jobayan.com/images/home/sec-3-1.svg" />
-				</div>
-				<div class="features-2-text">
-					<h3 class="features-2-head">Download Resumes on-the-go!</h3>
-					<p class="features-2-desc">You can acquire resumes of listed jobs that fit your business. Get to know their skills and experiences better.</p>
-				</div>
-			</div>
-			<div class="features-2-item mb-5">
-				<div class="features-2-text">
-					<h3 class="features-2-head">Match With More Qualified Candidates</h3>
-					<p class="features-2-desc">Jobayan will automatically recommend improvements to your job post. Just follow the instructions!</p>
-				</div>
-				<div class="features-2-img">
-					<img src="https://jobayan.com/images/home/sec-3-2.svg" />
-				</div>
-			</div>
-			<div class="features-2-item">
-				<div class="features-2-img">
-					<img src="https://jobayan.com/images/home/sec-3-3.svg" />
-				</div>
-				<div class="features-2-text">
-					<h3 class="features-2-head">Attach customized application forms to your job posts</h3>
-					<p class="features-2-desc">Pre-screen your applicants the way you want to. Create customized application forms easily and automate your pre-screening process for every job ad.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="call-to-action">
+
+	<div class="call-to-action" style="padding-top: 60px;">
 		<div class="container">
 			<div class="cta-container">
 				<h2 class="cta-head">Find applicants that matter to you.</h2>
