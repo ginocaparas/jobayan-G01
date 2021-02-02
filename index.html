@@ -69,12 +69,6 @@
             Employers
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-uppercase" href="./features/index.html">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-uppercase" href="#contact-us">Contact Us</a>
-        </li>
         </ul>
         <ul class="navbar-nav justify-content-between navbar-right">
           <li class="nav-item">
@@ -464,6 +458,65 @@
 </section>
 
 
+<!-- Section 2-->
+<section class="section section-2">
+  <style>
+
+
+  .section-2 .resumeDesc {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  </style>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" style="margin-bottom: 40px;">
+        <h1>Create and Download your FREE Resume!</h1>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 3em;">
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc01.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Build your Resume for FREE!</h4>
+          <p>Jobayan is FREE forever!</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc02.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Highlight Your Experience</h4>
+          <p>Put your best foot forward.</p>
+
+        </div>
+
+        
+        <div class="col-md-4">
+          <div class="resumeDesc">
+            <img src="./img/resumeDesc03.png" class="img-fluid" alt="Resume">
+          </div>
+          <h4>Save and Publish Easily</h4>
+          <p>Get your PDF resume and start applying for jobs.</p>
+        </div>
+
+      </div>
+        <div class="row">
+          <div class="col-md-12 justify-content-center" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-block btn-primary" href="/auth/signup">Get Started Now!</a>
+          </div>
+        </div>
+  </div>
+</section>
+
+
+<!-- How it Works -->
 <section class="section section-3">
   <style>
   .how-it-works {
@@ -561,62 +614,7 @@
 </section>
 
 
-<!-- Section 2-->
-<section class="section section-2">
-  <style>
 
-
-  .section-2 .resumeDesc {
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  </style>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12" style="margin-bottom: 40px;">
-        <h1>Create and Download your FREE Resume!</h1>
-      </div>
-    </div>
-
-    <div class="row" style="margin-bottom: 3em;">
-        <div class="col-md-4">
-          <div class="resumeDesc">
-            <img src="./img/resumeDesc01.png" class="img-fluid" alt="Resume">
-          </div>
-          <h4>Build your Resume for FREE!</h4>
-          <p>Jobayan is FREE forever!</p>
-        </div>
-
-        <div class="col-md-4">
-          <div class="resumeDesc">
-            <img src="./img/resumeDesc02.png" class="img-fluid" alt="Resume">
-          </div>
-          <h4>Highlight Your Experience</h4>
-          <p>Put your best foot forward.</p>
-
-        </div>
-
-        
-        <div class="col-md-4">
-          <div class="resumeDesc">
-            <img src="./img/resumeDesc03.png" class="img-fluid" alt="Resume">
-          </div>
-          <h4>Save and Publish Easily</h4>
-          <p>Get your PDF resume and start applying for jobs.</p>
-        </div>
-
-      </div>
-        <div class="row">
-          <div class="col-md-12 justify-content-center" style="margin-top: 20px;">
-            <a class="btn btn-lg btn-block btn-primary" href="/auth/signup">Get Started Now!</a>
-          </div>
-        </div>
-  </div>
-</section>
 
 
 <!-- Articles -->
@@ -743,108 +741,42 @@
 <!--section 5-->
 
 <section class="section section-5">
-  <a name="contact-us"></a>
+  <style type="text/css">
+  .page-home .section-5 {
+    background-color: #03B6D5;
+    padding: 60px 0;
+    color: white;
+  }
+
+  .page-home .section-5 label {
+    font-weight:600;
+  }
+
+  .page-home .section-5 input {
+    margin: 0.5em 0 1em;
+    height: 45px;
+  }
+
+  .page-home .section-5 .md-form textarea{
+    width:100%;
+    min-height: 10em;
+    margin:0 auto 2em;
+  }
+
+  .page-home .section-5 .btn-primary {
+    padding: 1em 2.5em;
+  }
+
+  </style>
+
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Contact Us</h1>
+        <h1>Get in touch with us!</h1>
+        <h5>We're more than happy to hear from you.</h5><br>
+        <a class="btn btn-primary" href="../contact-us/index.html">Contact Us</a>
       </div>
     </div>
-    <div class="row justify-content-center">
-
-                <!--Grid column-->
-                <div class="col-md-6 col-xl-7">
-                    <form id="contact-form" name="contact-form" action="./contactform/mail.php" method="POST" onsubmit="return validateForm()">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <div class="md-form">
-                                        <label for="name" class="">Your name</label>
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <div class="md-form">
-                                      <label for="email" class="">Your email</label>
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                  <label for="subject" class="">Subject</label>
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                  <label for="message">Your message</label>
-                                    <textarea type="text" id="message" name="message" class="md-textarea"></textarea>
-                                    
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--Grid row-->
-
-                    </form>
-
-                    <div class="center-on-small-only">
-                        <a class="btn btn-primary" onclick="validateForm()">Send</a>
-                    </div> <div class="status" id="status"></div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 col-xl-3">
-                      <div class="info">
-                  <div>
-                    <p><b>Head Office</b></p>
-                    <p>3F Sterling Place Annex Makati<br>
-                    2302 Chino Roces Ave. Extension<br>
-                    1231 Metro Manila<br></p>
-                  </div>
-
-                  <div>
-                    <p><b>Email</b></p>
-                    <p>info@jobayan.com</p>
-                  </div>
-
-                </div>
-                </div>
-                <!--Grid column-->
-
-            
-
-      </div>
-
   </div>
 </section>
 </section>
@@ -873,13 +805,18 @@
               </a>
             </li>
             <li>
-              <a href="/contact-us" title="Contact Us">
-                Contact Us
+              <a href="/Articles" title="News and Articles">
+                News and Articles
               </a>
             </li>
             <li>
-              <a href="/Articles" title="News and Articles">
-                News and Articles
+              <a href="#" title="Features">
+                Features
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Contact Us">
+                Contact Us
               </a>
             </li>
           </ul>
